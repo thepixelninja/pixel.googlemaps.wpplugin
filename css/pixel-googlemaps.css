@@ -1,0 +1,136 @@
+/*
+ * STYLE THE PIXEL GOOGLE MAPS PLUGIN
+ * BY ED FRYER
+ * ED@THEPIXEL.NINJA
+ */
+
+/*-----THE SHORTCODE-----*/
+
+.pixel-googlemap {
+	width:100%;
+	height:0px;
+	background:#efefef url(../images/map-loading.gif) no-repeat center;
+	border:1px solid #ccc;
+	padding-bottom:100%;
+}
+
+.pixel-googlemap .infoLabel {
+	z-index:99;
+	position:absolute;
+	background:rgba(0,0,0,0.8);
+	color:#fff;
+	border-radius:2px;
+	max-width:100px;
+	padding:2px;
+	font-size:100%;
+}
+
+@media screen and (min-width:600px){
+	.pixel-googlemap {
+		padding-bottom:60%;
+	}
+}
+
+/*-----THE ADMIN AREA-----*/
+
+/*-----structure-----*/
+#pixel-googlemap-options {
+	max-width:800px;
+}
+
+/*-----inputs-----*/
+#pixel-googlemap-options .input-holder {
+	display:table;
+	table-layout:fixed;
+}
+
+#pixel-googlemap-options .input-holder > div {
+	display:table-cell;
+	vertical-align:middle;
+	padding:10px;
+}
+
+#pixel-googlemap-options .input-holder .input-holder {
+	padding:0px;
+}
+
+#pixel-googlemap-options .input-holder .label {
+	width:100px;
+}
+
+#pixel-googlemap-options .input-holder .input,
+#pixel-googlemap-options .input-holder .select {
+	width:200px;
+}
+
+#pixel-googlemap-options .input-holder .btn {
+	width:100px;
+}
+
+#pixel-googlemap-options .input-holder input,
+#pixel-googlemap-options .input-holder select,
+#pixel-googlemap-options .input-holder textarea {
+	width:100%;
+	border:1px solid #ccc;
+}
+
+#pixel-googlemap-options .input-holder button {
+	width:100%;
+}
+
+#pixel-googlemap-options .input-holder input[type="checkbox"],
+#pixel-googlemap-options .input-holder input[type="radio"] {
+	width:auto;
+	min-width:0;
+}
+
+#pixel-googlemap-options .help {
+	font-size:80%;
+	font-style:italic;
+	opacity:0.8;
+	margin-bottom:10px;
+	float:left;
+	width:100%;
+}
+
+/*-----textareas-----*/
+#pixel-googlemap-options .input-holder.textarea label {
+	vertical-align:top;
+	padding-top:5px;
+}
+
+#pixel-googlemap-options .input-holder textarea {
+	min-height:150px;
+}
+
+/*-----image uploads-----*/
+#pixel-googlemap-options .input-holder.image .thumbnail {
+	width:40px;
+	height:40px;
+	background:#fff no-repeat center;
+	background-size:cover;
+	border:1px solid #ccc;
+	display:inline-block;
+}
+
+#pixel-googlemap-options .input-holder.image .thumbnail.noImage {
+	background-image:url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDQ4NS4yMTEgNDg1LjIxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0ODUuMjExIDQ4NS4yMTsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxwYXRoIGQ9Ik00NTQuODg5LDEyMS4zMDN2MzAzLjI1NUg5MC45NzhWMTIxLjMwM0g0NTQuODg5IE00ODUuMjExLDkwLjk3N0g2MC42NTF2MzYzLjkwOWg0MjQuNTZWOTAuOTc3TDQ4NS4yMTEsOTAuOTc3eiAgICBNMTIxLjMwNCwzNjMuOTA1aDMwMy4yNTdsLTYwLjY1My0xODEuOTUxbC05MC45NzYsMTIxLjMwMmwtNjAuNjUtNjAuNjUxTDEyMS4zMDQsMzYzLjkwNXogTTE1MS42MjgsMTgxLjk1NCAgIGMtMTYuNzYyLDAtMzAuMzI0LDEzLjU2NS0zMC4zMjQsMzAuMzI3czEzLjU2MiwzMC4zMjQsMzAuMzI0LDMwLjMyNGMxNi43NjIsMCwzMC4zMjctMTMuNTYyLDMwLjMyNy0zMC4zMjQgICBTMTY4LjM5MywxODEuOTU0LDE1MS42MjgsMTgxLjk1NHogTTAsMzAuMzI2djM2My45MWgzMC4zMjdWNjAuNjVoMzk0LjIzNVYzMC4zMjZIMHoiIGZpbGw9IiNkZWRlZGUiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K);
+	background-size:30px;
+}
+
+/*-----markers-----*/
+#pixel-googlemap-options .marker .label {
+	display:none;
+}
+
+/*-----dividers-----*/
+#pixel-googlemap-options .divider {
+	margin:10px 0;
+	float:left;
+	width:100%;
+}
+
+/*-----messages-----*/
+#pixel-googlemap-options .notice {
+	margin-left:0px;
+}
